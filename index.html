@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CinemaFlix - Cadastro (by StephKeys)</title>
+</head>
+
+<body>
+    <div class="box">
+        <form action="index.html">
+            <fieldset>
+                <legend align="center">Faça o seu cadastro</legend>
+
+                <div class="inputBox">
+                    <input type="text" id="nome" name="nome" class="inputUser" required>
+                    <label for="nome" class="inputLabel">Nome Completo</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" id="email" name="usuario" class="inputUser" required>
+                    <label for="usuario" class="inputLabel">E-mail</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <input type="telefone" id="telefone" name="telefone" class="inputUser" required>
+                    <label for="telefone" class="inputLabel">Telefone</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" name="nascimento" class="inputUser" id="nascimento" required>
+                </div>
+
+                <p>Produto:</p>
+                <div class="botoes">
+                    <input type="radio" class="radio" id="educacao" name="educacao" value="educacao">
+                    <label for="educacao">Educação</label>
+                </div>
+                <br>
+                <div class="botoes">
+                    <input type="radio" class="radio" id="cosignado" name="cosignado" value="cosignado">
+                    <label for="cosignado">Cosignado</label>
+                </div>
+                <br>
+                <div class="botoes">
+                    <input type="radio" class="radio" id="saude" name="saude" value="saude">
+                    <label for="saude">Saude</label>
+                </div>
+                <br>
+                <div class="botoes">
+                    <input type="radio" class="radio" id="refinanciamento" name="refinanciamento" value="refinanciamento">
+                    <label for="outro">refinanciamento</label>
+                </div>
+
+                <div class="inputBox">
+                    <p>Estado:</p>
+                    <select id="estado">
+                        <option selected disabled value="">Selecione</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+
+                <p>Escolha Sua Forma de atendimento</p>
+                <div class="botoes">
+                    <input type="checkbox" class="checkbox" id="whatsapp" value="whatsapp">
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="checkbox" class="checkbox inputSpace" id="email" value="email">
+                    <label for="email">Email</label>
+                    <input type="checkbox" class="checkbox inputSpace" id="ligacao" value="ligacao">
+                    <label for="ligacao">Telefone</label>
+                </div>
+                <br>
+
+                <input type="submit" name="submit" id="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
